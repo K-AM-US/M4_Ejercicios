@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">M4 - Ejercicios</string>
+    <string name="lifecycle">Ciclo de Vida de una App</string>
+    <string name="implicitIntent">Intent \nImplícito</string>
+    <string name="btnActivity2">Cargar activity 2</string>
+    <string name="btnActivity1">Regresar a activity 1</string>
+</resources>
