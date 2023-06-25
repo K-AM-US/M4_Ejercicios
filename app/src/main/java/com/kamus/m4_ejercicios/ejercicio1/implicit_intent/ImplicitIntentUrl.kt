@@ -1,4 +1,4 @@
-package com.kamus.m4_ejercicios.ejercicio1
+package com.kamus.m4_ejercicios.ejercicio1.implicit_intent
 
 import android.content.Intent
 import android.net.Uri

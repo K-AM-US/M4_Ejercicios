@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".ejercicio1.ImplicitIntentUrl">
+    tools:context=".ejercicio1.implicit_intent.ImplicitIntentUrl">
 
     <Button
         android:id="@+id/btnImplicitIntent"

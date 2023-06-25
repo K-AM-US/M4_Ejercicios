@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_700"
-    tools:context=".ejercicio1.Activity2">
+    tools:context=".ejercicio1.explicit_intent.Activity2">
 
     <Button
         android:id="@+id/btnActivity1"

@@ -1,4 +1,4 @@
-package com.kamus.m4_ejercicios.ejercicio1
+package com.kamus.m4_ejercicios.ejercicio1.explicit_intent
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

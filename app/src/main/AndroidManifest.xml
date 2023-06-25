@@ -12,11 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.M4Ejercicios"
         tools:targetApi="31">
+
         <activity
-            android:name=".ejercicio1.Activity2"
+            android:name=".ejercicio1.explicit_intent.Activity2"
             android:exported="false" />
+
         <activity
-            android:name=".ejercicio1.Activity1"
+            android:name=".ejercicio1.explicit_intent.Activity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,12 +26,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".ejercicio1.ImplicitIntentUrl"
+            android:name=".ejercicio1.implicit_intent.ImplicitIntentUrl"
             android:exported="true">
         </activity>
+
         <activity
-            android:name=".ejercicio1.AppLifeCycle"
+            android:name=".ejercicio1.lifecycle.AppLifeCycle"
             android:exported="true" />
     </application>
 
