@@ -13,10 +13,23 @@
         android:theme="@style/Theme.M4Ejercicios"
         tools:targetApi="31">
 
+        <!--_______________________________________ Ejercicio 1 _______________________________________-->
+        <!---->
+        <!-- App lifecycle -->
         <activity
-            android:name=".ejercicio1.explicit_intent.Activity2"
-            android:exported="false" />
+            android:name=".ejercicio1.lifecycle.AppLifeCycle"
+            android:exported="true">
+        </activity>
 
+
+        <!-- Implicit Intent -->
+        <activity
+            android:name=".ejercicio1.implicit_intent.ImplicitIntentUrl"
+            android:exported="true">
+        </activity>
+
+
+        <!-- Explicit Intent -->
         <activity
             android:name=".ejercicio1.explicit_intent.Activity1"
             android:exported="true">
@@ -28,13 +41,44 @@
         </activity>
 
         <activity
-            android:name=".ejercicio1.implicit_intent.ImplicitIntentUrl"
+            android:name=".ejercicio1.explicit_intent.Activity2"
+            android:exported="false" />
+
+
+        <!--_______________________________________ Ejercicio 2 _______________________________________-->
+        <!---->
+        <!-- Frame Layout-->
+        <activity
+            android:name=".ejercicio2.layouts.FrameLayoutActivity"
             android:exported="true">
+
         </activity>
 
+
+        <!-- Linear Layout -->
         <activity
-            android:name=".ejercicio1.lifecycle.AppLifeCycle"
-            android:exported="true" />
+            android:name=".ejercicio2.layouts.LinearLayoutActivity"
+            android:exported="true">
+
+        </activity>
+
+
+        <!-- Relative Layout -->
+        <activity
+            android:name=".ejercicio2.layouts.RelativeLayoutActivity"
+            android:exported="true">
+
+        </activity>
+
+
+        <!-- Constraint Layout -->
+        <activity
+            android:name=".ejercicio2.layouts.ConstraintLayoutActivity"
+            android:exported="true">
+
+        </activity>
+
+
     </application>
 
 </manifest>
