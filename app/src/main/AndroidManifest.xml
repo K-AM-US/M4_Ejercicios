@@ -33,11 +33,7 @@
         <activity
             android:name=".ejercicio1.explicit_intent.Activity1"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -75,7 +71,11 @@
         <activity
             android:name=".ejercicio2.layouts.ConstraintLayoutActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
 

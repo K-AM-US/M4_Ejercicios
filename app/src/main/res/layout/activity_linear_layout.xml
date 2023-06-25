@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:background="@color/black"
             android:gravity="center"
-            android:padding="5dp"
+            android:padding="15dp"
             android:text="@string/linearComponent4"
             android:textColor="@color/white" />
 
@@ -58,7 +58,7 @@
             android:layout_weight="1"
             android:background="@color/teal_700"
             android:gravity="center"
-            android:padding="5dp"
+            android:padding="15dp"
             android:text="@string/linearComponent5"
             android:textColor="@color/white" />
 
@@ -68,7 +68,7 @@
             android:layout_weight="1"
             android:background="@color/teal_200"
             android:gravity="center"
-            android:padding="5dp"
+            android:padding="15dp"
             android:text="@string/linearComponent6" />
     </LinearLayout>
 </LinearLayout>
