@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/usrAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/teal_700"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usrName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/usrLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/usrAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/usrLastName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/usrAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/usrAvatar"
+        app:layout_constraintTop_toBottomOf="@id/usrName"
+        tools:text="lastname" />
+
+    <TextView
+        android:id="@+id/usrAge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/usrAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/usrAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/usrLastName"
+        tools:text="Age" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

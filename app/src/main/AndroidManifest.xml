@@ -18,40 +18,54 @@
         <!-- App lifecycle -->
         <activity
             android:name=".ejercicio1.lifecycle.AppLifeCycle"
-            android:exported="true" >
-        </activity> <!-- Implicit Intent -->
+            android:exported="true" />
+
+        <!-- Implicit Intent -->
         <activity
             android:name=".ejercicio1.implicit_intent.ImplicitIntentUrl"
-            android:exported="true" >
-        </activity> <!-- Explicit Intent -->
+            android:exported="true" />
+
+        <!-- Explicit Intent -->
         <activity
             android:name=".ejercicio1.explicit_intent.Activity1"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ejercicio1.explicit_intent.Activity2"
-            android:exported="false" /> <!-- _______________________________________ Ejercicio 2 _______________________________________ -->
+            android:exported="false" />
+
+
+        <!-- _______________________________________ Ejercicio 2 _______________________________________ -->
         <!--  -->
         <!-- Frame Layout -->
         <activity
             android:name=".ejercicio2.layouts.FrameLayoutActivity"
-            android:exported="true" >
-        </activity> <!-- Linear Layout -->
+            android:exported="true" />
+
+        <!-- Linear Layout -->
         <activity
             android:name=".ejercicio2.layouts.LinearLayoutActivity"
-            android:exported="true" >
-        </activity> <!-- Relative Layout -->
+            android:exported="true" />
+
+        <!-- Relative Layout -->
         <activity
             android:name=".ejercicio2.layouts.RelativeLayoutActivity"
-            android:exported="true" >
-        </activity> <!-- Constraint Layout -->
+            android:exported="true" />
+
+        <!-- Constraint Layout -->
         <activity
             android:name=".ejercicio2.layouts.ConstraintLayoutActivity"
-            android:exported="true" >
+            android:exported="true" />
 
-        </activity><!-- Graphic Components -->
+        <!-- Graphic Components -->
         <activity
             android:name=".ejercicio2.graphic_components.GraphicComponents"
+            android:exported="true" >
+
+        </activity>
+
+        <!-- Recycler View -->
+        <activity
+            android:name=".ejercicio2.graphic_components.recycler_view.RecyclerViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,6 +73,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+    </application>
 </manifest>
