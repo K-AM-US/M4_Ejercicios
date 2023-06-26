@@ -3,23 +3,42 @@
 
     <!-- Ejercicio 1 -->
     <string name="lifecycle">Ciclo de Vida de una App</string>
+
     <string name="implicitIntent">Intent \nImplícito</string>
+
     <string name="btnActivity2">Cargar activity 2</string>
     <string name="btnActivity1">Regresar a activity 1</string>
 
     <!-- Ejercicio 2 -->
     <string name="frame">Frame Layout Activity</string>
+
     <string name="linearComponent1">Componente 1</string>
     <string name="linearComponent2">Componente 2</string>
     <string name="linearComponent3">Componente 3</string>
     <string name="linearComponent4">Componente 4</string>
     <string name="linearComponent5">Componente 5</string>
     <string name="linearComponent6">Componente 6</string>
+
     <string name="relativeData">Ingresa tus datos</string>
     <string name="relativeHintEmail">Correo</string>
     <string name="relativeSendButton">Entrar</string>
+
     <string name="constraintHintEmail">Email</string>
     <string name="constraintHintPassword">Password</string>
     <string name="constraintRegisterMessage">Ya estás registrado!</string>
+
+    <string name="form">Formulario</string>
+    <string name="nameform">Nombre: </string>
+    <string name="lastnameform">Apellido: </string>
+    <string name="languagesform">Lenguajes de programación y frameworks</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="js">JavaScript</string>
+    <string name="swift">Swift</string>
+    <string name="android">Android</string>
+    <string name="ios">iOS</string>
+    <string name="web">Web</string>
+    <string name="desktop">Desktop</string>
+    <string name="imgButton">Toca la siguiente imagen</string>
+    <string name="sendButton">Enviar datos</string>
 
 </resources>

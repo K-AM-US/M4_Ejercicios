@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio2.graphic_components.GraphicComponents">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <TextView
+        android:id="@+id/tvForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/form"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/topGuideline" />
+
+    <TextView
+        android:id="@+id/tvNameForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/nameform"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvForm" />
+
+    <EditText
+        android:id="@+id/etNameForm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameform"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameForm" />
+
+    <TextView
+        android:id="@+id/tvLastNameForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/lastnameform"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/etNameForm" />
+
+    <EditText
+        android:id="@+id/etLastNameForm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastnameform"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastNameForm" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="15dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@id/etLastNameForm"
+        app:layout_constraintStart_toEndOf="@id/etNameForm"
+        app:layout_constraintTop_toBottomOf="@id/tvNameForm" />
+
+    <TextView
+        android:id="@+id/tvLanguages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_200"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/languagesform"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/etLastNameForm" />
+
+    <CheckBox
+        android:id="@+id/cbKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kotlin"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/tvLanguages" />
+
+    <CheckBox
+        android:id="@+id/cbJs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/js"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/cbKotlin" />
+
+    <CheckBox
+        android:id="@+id/cbSwift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swift"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/cbJs" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centralGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPlatform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/centralGuideline"
+        app:layout_constraintTop_toBottomOf="@id/tvLanguages">
+
+        <RadioButton
+            android:id="@+id/rAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android" />
+
+        <RadioButton
+            android:id="@+id/rIos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ios" />
+
+        <RadioButton
+            android:id="@+id/rWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/web" />
+
+        <RadioButton
+            android:id="@+id/rDesktop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desktop" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleCenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupPlatform" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/middleCenterGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline" />
+
+    <TextView
+        android:id="@+id/ivIbText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="@string/imgButton"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/centralGuideline"/>
+
+    <ImageButton
+        android:id="@+id/iBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:onClick="imgOnclick"
+        app:layout_constraintTop_toBottomOf="@id/ivIbText"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/centralGuideline"/>
+
+    <Button
+        android:id="@+id/gcSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/sendButton"
+        android:onClick="sendDataOnClick"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@id/centralGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
