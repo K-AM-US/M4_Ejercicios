@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tarea.DatosActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="110dp"/>
+
+    <TextView
+        android:id="@+id/dataName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:background="@color/purple_200"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuideline"
+        tools:text="Hola Nombre" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:text="@string/result"
+        app:layout_constraintTop_toTopOf="@id/middleGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintBottom_toTopOf="@id/dataFullName" />
+
+    <TextView
+        android:id="@+id/dataFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/data"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintBottom_toTopOf="@id/dataGenre"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        tools:text="Nombre completo: "/>
+
+    <TextView
+        android:id="@+id/dataGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/dataFullName"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintBottom_toTopOf="@id/dataEmail"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        tools:text="Genero"/>
+
+    <TextView
+        android:id="@+id/dataEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/dataGenre"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintBottom_toTopOf="@id/dataPassword"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        tools:text="correo"/>
+
+    <TextView
+        android:id="@+id/dataPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/dataEmail"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintBottom_toTopOf="@id/img"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        tools:text="Pass"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@id/dataPassword"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

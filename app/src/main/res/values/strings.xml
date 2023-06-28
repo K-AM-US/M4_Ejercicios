@@ -41,4 +41,22 @@
     <string name="imgButton">Toca la siguiente imagen</string>
     <string name="sendButton">Enviar datos</string>
 
+    <!-- Tarea -->
+    <string name="title">App de Registro</string>
+    <string name="instructions">Llena los campos con la información necesaria</string>
+    <string name="genre">Sexo:</string>
+    <string name="m">Masculino</string>
+    <string name="f">Femenino</string>
+    <string name="noGenre">No se ha seleccionado un género</string>
+    <string name="email">Email:</string>
+    <string name="password">Contraseña:</string>
+    <string name="blank">Campo vacio</string>
+
+    <string name="result">Los datos ingresados son: </string>
+    <string name="greetings">Hola %s!</string>
+    <string name="fullname">Nombre Completo: %1s %2s</string>
+    <string name="dataGenre">Género: %s</string>
+    <string name="dataEmail">Email: %s</string>
+    <string name="dataPassword">Password: %s</string>
+
 </resources>
