@@ -59,4 +59,15 @@
     <string name="dataEmail">Email: %s</string>
     <string name="dataPassword">Password: %s</string>
 
+    <!-- Práctica final -->
+    <string name="register">¿Registrarse?</string>
+    <string name="registerTitle">Registrate!</string>
+    <string name="welcome">Bienvenido!</string>
+    <string name="usrEmail">Usuario Registrado con el email:\n %s</string>
+    <string name="usrPass">Contraseña: %s</string>
+    <string name="usrData">Datos personales:</string>
+    <string name="usrName">Nombre: %s</string>
+    <string name="usrLastName">Apellido: %s</string>
+    <string name="usrGenre">Género: %s</string>
+
 </resources>

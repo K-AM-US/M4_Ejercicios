@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".practica_final.RegisterFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="40dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftMiddleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/etRegisterName"/>
+
+    <ImageView
+        android:id="@+id/registerLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="@id/topGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintBottom_toTopOf="@id/registerTitle"/>
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerTitle"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/tvRegisterName"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/registerLogo" />
+
+    <TextView
+        android:id="@+id/tvRegisterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal"
+        android:text="@string/nameform"
+        app:layout_constraintBottom_toTopOf="@id/etRegisterName"
+        app:layout_constraintStart_toStartOf="@id/leftMiddleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/registerTitle" />
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameform"
+        app:layout_constraintBottom_toTopOf="@id/tvRegisterLastName"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterName" />
+
+    <TextView
+        android:id="@+id/tvRegisterLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastnameform"
+        app:layout_constraintBottom_toTopOf="@id/etRegisterLastName"
+        app:layout_constraintStart_toStartOf="@id/leftMiddleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterName" />
+
+    <EditText
+        android:id="@+id/etRegisterLastName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastnameform"
+        app:layout_constraintBottom_toTopOf="@id/registerGenre"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterLastName" />
+
+    <TextView
+        android:id="@+id/registerGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genre"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterLastName"
+        app:layout_constraintStart_toStartOf="@id/leftMiddleGuideline"
+        app:layout_constraintBottom_toTopOf="@id/genreGroup"/>
+
+    <RadioGroup
+        android:id="@+id/genreGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/registerGenre"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintBottom_toTopOf="@id/tvRegisterEmail">
+
+        <RadioButton
+            android:id="@+id/genreM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m" />
+
+        <RadioButton
+            android:id="@+id/genreF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/f" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvRegisterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal"
+        android:text="@string/email"
+        app:layout_constraintTop_toBottomOf="@id/genreGroup"
+        app:layout_constraintStart_toStartOf="@id/leftMiddleGuideline"
+        app:layout_constraintBottom_toTopOf="@id/etRegisterEmail" />
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterEmail"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintBottom_toTopOf="@id/tvRegisterPassword" />
+
+    <TextView
+        android:id="@+id/tvRegisterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal"
+        android:text="@string/password"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterEmail"
+        app:layout_constraintStart_toStartOf="@id/leftMiddleGuideline"
+        app:layout_constraintBottom_toTopOf="@id/etRegisterPassword"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterPassword"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintBottom_toTopOf="@id/btnRegister"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sendButton"
+        android:onClick="sendDataOnClick"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterPassword"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
